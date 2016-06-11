@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<opml version="1.0">
+  <head>
+    <title>Pocket Casts Feeds</title>
+    <dateCreated>Fri, 10 Jun 2016 22:56:13 +0000</dateCreated>
+    <dateModified>Fri, 10 Jun 2016 22:56:13 +0000</dateModified>
+  </head>
+  <body>
+    <outline text="feeds">
+      <outline text="Cortex" type="rss" xmlUrl="https://www.relay.fm/cortex/feed"/>
+      <outline text="The Pen Addict" type="rss" xmlUrl="Http://relay.fm/penaddict/feed"/>
+      <outline text="Daily(ish)" type="rss" xmlUrl="http://feeds.goodstuff.fm/dailyish"/>
+      <outline text="Upgrade" type="rss" xmlUrl="http://relay.fm/upgrade/feed"/>
+      <outline text="The Productivity in Tech Podcast" type="rss" xmlUrl="http://productivityintech.libsyn.com/rss"/>
+      <outline text="Today We Learned" type="rss" xmlUrl="http://todaywelearned.libsyn.com/rss"/>
+      <outline text="Less Than or Equal" type="rss" xmlUrl="https://www.relay.fm/ltoe/feed/"/>
+      <outline text="Remaster" type="rss" xmlUrl="https://www.relay.fm/remaster/feed"/>
+      <outline text="Canvas" type="rss" xmlUrl="https://www.relay.fm/canvas/feed"/>
+      <outline text="Morning Show" type="rss" xmlUrl="http://feeds.goodstuff.fm/transmission"/>
+      <outline text="Thoroughly Considered" type="rss" xmlUrl="https://www.relay.fm/tc/feed"/>
+      <outline text="Clockwise" type="rss" xmlUrl="https://www.relay.fm/clockwise/feed"/>
+      <outline text="The Morning Stream" type="rss" xmlUrl="http://feeds.frogpants.com/morningstream_feed.xml"/>
+      <outline text="Analog(ue)" type="rss" xmlUrl="Http://relay.fm/analogue/feed"/>
+      <outline text="Non Breaking Space Show" type="rss" xmlUrl="http://feeds.goodstuff.fm/nbsp"/>
+      <outline text="Connected" type="rss" xmlUrl="https://www.relay.fm/connected/feed"/>
+      <outline text="Rocket" type="rss" xmlUrl="https://www.relay.fm/rocket/feed"/>
+      <outline text="Late Nights with Trav and Los" type="rss" xmlUrl="https://simplecast.com/podcasts/311/rss"/>
+      <outline text="CoolGames Inc" type="rss" xmlUrl="http://feeds.feedburner.com/CoolGamesInc"/>
+      <outline text="Episode &#x2013; Daily Tech News Show" type="rss" xmlUrl="http://feeds.feedburner.com/DailyTechNewsShow"/>
+      <outline text="Sawbones: A Marital Tour of Misguided Medicine" type="rss" xmlUrl="HTTP://sawbones.libsyn.com/rss"/>
+      <outline text="The Adventure Zone" type="rss" xmlUrl="http://adventurezone.libsyn.com/rss"/>
+      <outline text="The Limit Does Not Exist: A Podcast for People Who Don't Fit in Boxes" type="rss" xmlUrl="http://tldne.forbes.libsynpro.com/rss"/>
+      <outline text="Data Skeptic" type="rss" xmlUrl="http://dataskeptic.libsyn.com/rss"/>
+      <outline text="Judge John Hodgman" type="rss" xmlUrl="http://feeds.feedburner.com/todayinthepast"/>
+      <outline text="My Brother, My Brother And Me" type="rss" xmlUrl="http://mbmbam.libsyn.com/rss"/>
+      <outline text="CodeNewbie" type="rss" xmlUrl="http://feeds.podtrac.com/q8s8ba9YtM6r"/>
+      <outline text="picomac" type="rss" xmlUrl="http://www.ecormany.com/picomac?format=rss"/>
+      <outline text="Exponent" type="rss" xmlUrl="http://exponent.fm/feed/"/>
+      <outline text="SMRPodcast" type="rss" xmlUrl="http://feeds.feedburner.com/simplemobilereviewpodcast"/>
+      <outline text="Accidental Tech Podcast" type="rss" xmlUrl="http://atp.fm/episodes?format=rss"/>
+      <outline text="On Being with Krista Tippett" type="rss" xmlUrl="http://www.onbeing.org/podcasts/podcast.xml"/>
+      <outline text="Mac Power Users" type="rss" xmlUrl="https://www.relay.fm/mpu/feed"/>
+      <outline text="Grumpy Old Geeks" type="rss" xmlUrl="http://www.blogtalkradio.com/gog/podcast"/>
+      <outline text="Beautiful Stories From Anonymous People" type="rss" xmlUrl="http://rss.earwolf.com/beautiful-anonymous"/>
+      <outline text="Drunks and Dragons - Dungeons and Dragons 5e Actual Play" type="rss" xmlUrl="http://feeds.feedburner.com/DnDPodcast"/>
+      <outline text="The Read" type="rss" xmlUrl="http://feeds.podtrac.com/eL1krEll7iB4"/>
+      <outline text="Interrobang with Travis and Tybee" type="rss" xmlUrl="http://interrobangcast.libsyn.com/rss"/>
+      <outline text="The Productive Pastor" type="rss" xmlUrl="http://productivepastor.libsyn.com/rss"/>
+      <outline text="The Christian Nerd Podcast" type="rss" xmlUrl="http://thechristiannerd.libsyn.com/rss"/>
+      <outline text="Mac OS Ken" type="rss" xmlUrl="http://macosken.libsyn.com/rss"/>
+      <outline text="Ruminate Podcast" type="rss" xmlUrl="https://simplecast.com/podcasts/1306/rss"/>
+      <outline text="Hotline Monday" type="rss" xmlUrl="http://feeds.frogpants.com/hotlinemonday_feed.xml"/>
+      <outline text="Sketchnote Army Podcast" type="rss" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:225403540/sounds.rss"/>
+      <outline text="Thunder Nerds" type="rss" xmlUrl="http://thundernerdshoo.com/feed/podcast/"/>
+      <outline text="We Got This with Mark and Hal" type="rss" xmlUrl="http://wegotthis.libsyn.com/rss"/>
+      <outline text="Upvoted by Reddit" type="rss" xmlUrl="http://upvoted.libsyn.com/rss"/>
+      <outline text="Talk Python To Me - Python conversations for passionate developers" type="rss" xmlUrl="https://talkpython.fm/episodes/rss"/>
+      <outline text="Stuff You Missed in History Class" type="rss" xmlUrl="http://www.howstuffworks.com/podcasts/stuff-you-missed-in-history-class.rss"/>
+      <outline text="TEDTalks Society and Culture" type="rss" xmlUrl="http://feeds.feedburner.com/iTunesPodcastTTSocietyCulture"/>
+      <outline text="ShopTalk" type="rss" xmlUrl="http://shoptalkshow.com/feed/podcast"/>
+      <outline text="Plugged In" type="rss" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:138768754/sounds.rss"/>
+      <outline text="Grumpycast" type="rss" xmlUrl="http://feeds.feedburner.com/Grumpycast"/>
+      <outline text="Sleeping With The Elephant" type="rss" xmlUrl="http://sleepingwiththeelephant.com/feed/podcast/"/>
+    </outline>
+  </body>
+</opml>
+
