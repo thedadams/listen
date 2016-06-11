@@ -9,9 +9,9 @@ import (
 )
 
 type Outline struct {
-	Title  string `xml:"text,attr"`
-	Type   string `xml:"rss,attr"`
-	xmlUrl string `xml:"xmlUrl,attr"`
+	Title string `xml:"text,attr"`
+	Type  string `xml:"type,attr"`
+	Url   string `xml:"xmlUrl,attr"`
 }
 
 func new_user() string {
@@ -46,6 +46,8 @@ func main() {
 			var opml_struct Outline = Outline{}
 			xml.Unmarshal([]byte(opml_reader.Text()), &opml_struct)
 			fmt.Println(opml_struct.Title)
+			fmt.Println(opml_struct.Type)
+			fmt.Println(opml_struct.Url)
 		}
 	}
 }
