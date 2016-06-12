@@ -4,14 +4,49 @@ import (
 	"bufio"
 	"encoding/xml"
 	"fmt"
+	"io/ioutil"
+	"net/http"
 	"os"
-	"strings"
 )
+
+type OPML struct {
+	Player   string    `xml:"head>title"`
+	Podcasts []Outline `xml:"body>outline>outline"`
+}
+
+func (this OPML) String() string {
+	return this.Player + "\n\n" + fmt.Sprintln(this.Podcasts)
+}
 
 type Outline struct {
 	Title string `xml:"text,attr"`
 	Type  string `xml:"type,attr"`
 	Url   string `xml:"xmlUrl,attr"`
+}
+
+func (this Outline) String() string {
+	return fmt.Sprintf("Title: %v\nURL: %v", this.Title, this.Url)
+}
+
+type Podcast struct {
+	Title       string   `xml:"channel>title"`
+	Url         string   `xml:"channel>link"`
+	Description string   `xml:"channel>description"`
+	Copyright   string   `xml:"channel>copyright"`
+	Author      string   `xml:"channel>author"`
+	Categroy    Category `xml:"channel>category"`
+	Image       Image    `xml:"channel>image"`
+}
+
+func (this Podcast) String() string {
+	return fmt.Sprintf("Title: %v\nAuthor: %v\nDescription: %v\nCopyright: %v", this.Title, this.Author, this.Description, this.Copyright)
+}
+
+type Category struct {
+	Name string `xml:"text,attr"`
+}
+type Image struct {
+	URL string `xml:"href,attr"`
 }
 
 func new_user() string {
@@ -35,19 +70,23 @@ func main() {
 	//We need some information from them... Like their OPML 💩
 	fmt.Println("We need to get your OPML file where is it?")
 
-	// open the opml.file and unmarshal it into our Outline struct
-	opml_file, _ := os.Open("export.opml")
-	opml_reader := bufio.NewScanner(opml_file)
-	opml_text := ""
-	for opml_reader.Scan() {
-		opml_text += opml_reader.Text() + "\n"
-		if strings.Contains(opml_reader.Text(), "<outline ") {
-			//        fmt.Println(opml_reader.Text())
-			var opml_struct Outline = Outline{}
-			xml.Unmarshal([]byte(opml_reader.Text()), &opml_struct)
-			fmt.Println(opml_struct.Title)
-			fmt.Println(opml_struct.Type)
-			fmt.Println(opml_struct.Url)
+	// Parse the entire feed into an OPML
+	var opmlStruct OPML = OPML{}
+	fileBytes, err := ioutil.ReadFile("export.opml")
+	if err == nil {
+		xml.Unmarshal(fileBytes, &opmlStruct)
+		fmt.Println(opmlStruct)
+	}
+	Podcasts := make([]Podcast, len(opmlStruct.Podcasts))
+	for i, val := range opmlStruct.Podcasts {
+		resp, err := http.Get(val.Url)
+		if err == nil {
+			fileBytes, err = ioutil.ReadAll(resp.Body)
+			xml.Unmarshal(fileBytes, &Podcasts[i])
+			resp.Body.Close()
 		}
+	}
+	for _, val := range Podcasts {
+		fmt.Println(val)
 	}
 }
